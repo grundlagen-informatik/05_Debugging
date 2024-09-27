@@ -1,3 +1,0 @@
-C:/Users/igeis/Nextcloud/HF/Informatik/MTS-SYS.23/Semester_2/05_Debugging/cmake-build-debug/CMakeFiles/05_Debugging.dir
-C:/Users/igeis/Nextcloud/HF/Informatik/MTS-SYS.23/Semester_2/05_Debugging/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/igeis/Nextcloud/HF/Informatik/MTS-SYS.23/Semester_2/05_Debugging/cmake-build-debug/CMakeFiles/rebuild_cache.dir

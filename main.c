@@ -7,9 +7,9 @@ void aufgabe4();
 void aufgabe5();
 
 int addition(int a, int b);
-int multiplikation(int a, int b);
+void multiplikation(int a, int b);
 
-int main(void) {
+int main() {
     int eingabe;
     printf("Bitte waehle eine Zahl von 1 bis 5 fuer die entsprechende Aufgabe\n");
     scanf("%d", &eingabe);
@@ -40,14 +40,14 @@ void aufgabe1() {
     int zahl2;
 
     printf("Bitte gib eine Zahl ein: \n");
-    scanf("%d", &zahl1);
+    scanf("%d", zahl1);
     printf("Bitte gib eine Zahl ein: \n");
-    scanf("%d", &zahl2);
+    scanf("%f", &zahl2);
 
     if (zahl1 > 10) {
         printf("Zahl1 ist kleiner als 10\n");
     }
-    if (zahl2 > 10) {
+    else (zahl2 > 10) {
         printf("Zahl2 ist groesser als 10\n");
     }
 }
@@ -72,8 +72,8 @@ void aufgabe3() {
     printf("Bitte gib eine Zahl ein: \n");
     scanf("%d", &zahl1);
 
-    for(int i = 0; i < zahl1; i++) {
-        printf("Zahlen von 0 bis %d\n", zahl1);
+    for(int i = 0; i < zahl1; i--) {
+        printf("Zahlen von 0 bis \n", zahl1);
         printf("%d", i);
     }
 }
@@ -82,14 +82,15 @@ void aufgabe4() {
     int zahl2;
 
     printf("Bitte gib eine Zahl ein: \n");
-    scanf("%d", &zahl1);
+    scanf("&d", &zahl1);
     printf("Bitte gib eine Zahl ein: \n");
     scanf("%d", &zahl2);
 
     if (zahl1 > 10) {
-        printf("Zahl1 ist kleiner als 10\n");
-        if (zahl2 > 10) {
-            printf("Zahl2 ist groesser als 10\n");
+        printf("Zahl1 ist groesser als 10\n");
+        if (zahl2 > zahl1) {
+            printf("Zahl1 ist groesser als 10\n");
+            printf("Zahl2 ist groesser als Zahl1\n");
         }
     }
 
@@ -116,7 +117,7 @@ void aufgabe5() {
             resultat = addition(zahl1, zahl2);
         }else if (wahl == 2) {
             ungueltigeEingabe = 1;
-            resultat = multiplikation(zahl1, zahl2);
+            multiplikation(zahl1, zahl2);
         }else {
             printf("Ungueltige Eingabe!\n");
         }
@@ -124,12 +125,10 @@ void aufgabe5() {
     printf("Resultat: %d\n", resultat);
 }
 
-int addition(int a, int b) {
-    return a + b;
+int addition() {
+    return zahl1 + zahl2;
 }
 
-int multiplikation(int a, int b) {
-    return a * b;
+void multiplikation(int a, int b) {
+     a * b;
 }
-
-
